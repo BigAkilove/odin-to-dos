@@ -1,9 +1,9 @@
-export {displayTodo, domContent}
-
-const domContent = document.getElementById('content');
+export {displayTodo}
 
 function displayTodo (TodoArray) {
-  for (todo of TodoArray) {
+  const domContent = document.getElementById('content');
+
+  TodoArray.forEach(todo => {
     const container = document.createElement('div');
     container.classList.add('to-do-container');
 
@@ -44,5 +44,5 @@ function displayTodo (TodoArray) {
     container.appendChild(checklist);
 
     domContent.appendChild(container);
-  }
+  });  
 }
