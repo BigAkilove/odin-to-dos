@@ -1,9 +1,11 @@
 import "./styles.css";
-import { projects } from "./to-dos.js"
+import { projects } from "./projects.js"
+import { displayProject } from "./create-project-dom.js";
 import { displayTodo } from "./create-todo-dom.js"
 import { todoArray } from "./to-dos.js";
 
 console.log(todoArray)
-//displayTodo(projects.array);
+displayProject(projects)
+displayTodo(todoArray,projects)
 
 //the todos are stocked in the todoArray, can create a project class then a js file that import both the project class and the todoArray

@@ -6,5 +6,5 @@ class Project {
 }
 
 export const projects = new Project('My Project', []);
-console.log(projects)
+
   // The project shows all todos inside of it, in a scrolling horizontal way for now

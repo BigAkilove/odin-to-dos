@@ -1,7 +1,8 @@
 export {displayTodo}
 
-function displayTodo (TodoArray) {
-  const domContent = document.getElementById('content');
+function displayTodo (TodoArray, projectDom) {
+  console.projectDom
+  const domContent = document.getElementById(projectDom.name);
 
   TodoArray.forEach(todo => {
     const container = document.createElement('div');
