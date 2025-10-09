@@ -30,39 +30,52 @@ body,html {
 
 .project {
     font-size: 15px;
+    width: 90vw;
+    height: fit-content;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
 }
 
 .project-name {
     font-size: 15px;
     font-weight: bold;
     border-bottom: 1px black solid;
+    width: 100%;
 }
 
 .to-do-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: space-between;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 10px;
-    padding: 20px;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: fit-content;
     gap: 10px;
     border: 1px solid black;
 }
 
-.to-do {
+.to-do-button-container {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.rest-of-to-do {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center;
-    margin: 10px;
-    padding: 20px;
-    width: 300px;
+    justify-content: start;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
     gap: 10px;
-    border: 1px solid black;
+    border-top: 1px solid black;
 }
 
 .to-do-title {
