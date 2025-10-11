@@ -3,6 +3,7 @@ export {displayTodo}
 function displayTodo (TodoArray, projectDom) {
   console.projectDom
   const domContent = document.getElementById(projectDom.name);
+  domContent.innerHTML = ''
 
   TodoArray.forEach(todo => {
     const container = document.createElement('div');
