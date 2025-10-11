@@ -8,7 +8,8 @@ export function displayProject (project) {
   
 
   const projectName = document.createElement('div');
-  projectName.innerText = project.name;
+  let textNode = document.createTextNode(project.name);
+  projectName.appendChild(textNode);
   projectName.classList.add('project-name');
 
   console.log(projectDiv)
