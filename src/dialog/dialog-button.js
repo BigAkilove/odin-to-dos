@@ -1,0 +1,43 @@
+import { getDataFromForm } from "./dialog-data";
+import { todoArray } from "../todos/to-do-array";
+import { removeToDo } from "../todos/remove-to-do";
+
+
+
+export function openModal () {
+  const button = document.querySelector('#add-todo-button');
+  const dialog = document.querySelector('#todo-dialog');
+
+  button.addEventListener('click', () => {
+    dialog.showModal();
+  });
+}
+
+export function closeModal () {
+  const button = document.querySelector('#dialog-close-button');
+  const dialog = document.querySelector('#todo-dialog');
+
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    dialog.close();
+  });
+}
+
+export function submitForm () {
+  const button = document.querySelector('#dialog-submit-button');
+  const dialog = document.querySelector('#todo-dialog');
+
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    getDataFromForm();
+    removeToDo(todoArray);
+    //add a function to make a todo from the form
+    dialog.close();
+  });
+}
+
+export function callAddToDoDialog () {
+  openModal();
+  closeModal();
+  submitForm();
+}

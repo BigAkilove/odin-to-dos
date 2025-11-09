@@ -7,6 +7,36 @@
 </head>
 <body>
   <div id="header"><div>Header</div></div>
+  <button id="add-todo-button">Add a project</button>
+
+  <dialog id="todo-dialog">
+    <button id="dialog-close-button">Close form</button>
+    <button id="dialog-submit-button">Submit form</button>
+    <form action="" id="todo-form">
+        <label for="todo-name">Name of the task:</label>
+        <input id="todo-name" type="text">
+
+        <label for="objective">Objective:</label>
+        <input id="objective" type="text">
+
+        <label for="due-date">Due for:</label>
+        <input id="due-date" type="text">
+
+        <fieldset>
+          <legend>Select how important the task is</legend>
+            <input type="radio" id="high" value="high" name="importance"> <label for="high">High</label>
+            <input type="radio" id="medium" value="medium" name="importance"> <label for="medium">Medium</label>
+            <input type="radio" id="low" value="low" name="importance"> <label for="low">Low</label>
+        </fieldset>
+         
+        <label for="notes">Notes:</label>
+        <input id="notes" type="text">
+
+        <label for="completed">Completed:</label>
+        <input id="completed" type="text"> <!-- 2 options to choose from here, yes or no -->
+    </form>
+  </dialog>
+
   <div id="content"></div>
 </body>
 </html>
