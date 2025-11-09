@@ -6,9 +6,6 @@ import { todoArray } from "./todos/to-do-array.js"
 import { removeToDo } from "./todos/remove-to-do.js";
 import { callAddToDoDialog } from "./dialog/dialog-button.js";
 
-//import { openModal, closeModal, submitForm } from "./dialog/dialog-button.js";
-
-
 displayProject(projectArray[0]);
 //create the project from the first one in the array 
 displayTodo(todoArray,projectArray[0]);
@@ -17,9 +14,5 @@ removeToDo(todoArray);
 //add event listeners on the X buttons to be able to remove a single todo and then run display todo again
 callAddToDoDialog();
 //Calls event listeners for the create a todo button linked to the form
-
-/* openModal();
-closeModal();
-submitForm(); */
 
 //the todos are stocked in the todoArray, can create a project class then a js file that import both the project class and the todoArray
