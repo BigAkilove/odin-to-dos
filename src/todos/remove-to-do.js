@@ -10,8 +10,8 @@ removeButtons.forEach((button)=> {
     array.forEach((todo) => {
       //array is equal to what we call it in index.js, the todo array
 
-      const attributeTodoTitle = button.parentElement.parentElement.getAttribute('data-title');
-      //creates a variable that goes from the button, goes above to the button container, then above to the todo container and looks for the title attribute
+      const attributeTodoTitle = button.closest('.to-do-container').getAttribute('data-title');
+      //creates a variable that goes through the button container and the todo container and selected the title attribute
 
       if (todo.title === attributeTodoTitle) {
       //check if the title of the todo is equal to the data title attribute
