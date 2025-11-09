@@ -1,7 +1,7 @@
-import { Todo } from "../todos/to-dos";
-import { todoArray } from "../todos/to-do-array";
+import { Todo } from "../todos/to-dos.js";
+import { todoArray } from "../todos/to-do-array.js";
 import { projectArray } from "../projects/project-array.js";
-import { displayTodo } from "../todos/create-todo-dom";
+import { displayTodo } from "../todos/create-todo-dom.js";
 
 export function getDataFromForm () {
   const data = document.querySelectorAll('#todo-dialog form input');
@@ -14,7 +14,7 @@ export function getDataFromForm () {
           id: 'importance',
           value : element.value
         }
-        array.push(idAndValue)
+        array.push(idAndValue);
       }
     } else {
 
@@ -22,10 +22,10 @@ export function getDataFromForm () {
       id: element.id,
       value : element.value
     }
-    array.push(idAndValue)
+    array.push(idAndValue);
     
     }
   });
-  const newTodo = new Todo (array[0].value, array[1].value, array[2].value, array[3].value, array[4].value, array[5].value, todoArray)
+  const newTodo = new Todo (array[0].value, array[1].value, array[2].value, array[3].value, array[4].value, array[5].value, todoArray);
   displayTodo(todoArray, projectArray[0]);
 }

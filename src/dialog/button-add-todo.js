@@ -1,8 +1,6 @@
-import { getDataFromForm } from "./dialog-data";
+import { getDataFromForm } from "./formdata-add-todo";
 import { todoArray } from "../todos/to-do-array";
 import { removeToDo } from "../todos/remove-to-do";
-
-
 
 export function openModal () {
   const button = document.querySelector('#add-todo-button');
@@ -36,7 +34,7 @@ export function submitForm () {
   });
 }
 
-export function callAddToDoDialog () {
+export function todoDialog () {
   openModal();
   closeModal();
   submitForm();

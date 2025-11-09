@@ -7,7 +7,8 @@
 </head>
 <body>
   <div id="header"><div>Header</div></div>
-  <button id="add-todo-button">Add a project</button>
+  <button id="add-todo-button">Create a todo</button>
+  <button id="add-project">Create a project</button>
 
   <dialog id="todo-dialog">
     <button id="dialog-close-button">Close form</button>
@@ -34,6 +35,15 @@
 
         <label for="completed">Completed:</label>
         <input id="completed" type="text"> <!-- 2 options to choose from here, yes or no -->
+    </form>
+  </dialog>
+
+  <dialog id="project-dialog">
+    <button id="project-dialog-close-button">Close form</button>
+    <button id="project-dialog-submit-button">Submit form</button>
+    <form action="" id="project-form">
+        <label for="project-name">Name of the project:</label>
+        <input id="project-name" type="text">
     </form>
   </dialog>
 
