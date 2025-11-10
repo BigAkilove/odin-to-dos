@@ -5,7 +5,8 @@ export class Project {
 
     this.pushInArray = () => {
       const project = {
-        name : this.name
+        name : this.name,
+        
       }
       array.push(project)
     }

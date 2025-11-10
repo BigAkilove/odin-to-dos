@@ -1,3 +1,5 @@
+import { getFormProjectData } from "./formdata-add-project";
+
 export function openModal () {
   const button = document.querySelector('#add-project');
   const dialog = document.querySelector('#project-dialog');
@@ -23,6 +25,8 @@ export function submitForm () {
 
   button.addEventListener('click', (e) => {
     e.preventDefault();
+    getFormProjectData();
+    
     //add a function to make a todo from the form
     dialog.close();
   });
