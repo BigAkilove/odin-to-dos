@@ -17,8 +17,7 @@ removeButtons.forEach((button)=> {
       //check if the title of the todo is equal to the data title attribute
 
         const domContent = document.getElementById(projectArray[0].name);
-        domContent.innerHTML = '';
-        //deletes the content of the project div we're in (currently hard coded)
+        //selects the content of the project div we're in (currently hard coded)
 
         const positionOfToDo = array.indexOf(array.find((todo) => attributeTodoTitle));
         array.splice(positionOfToDo,1);

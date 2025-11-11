@@ -1,5 +1,5 @@
 import { getDataFromForm } from "./formdata-add-todo";
-import { todoArray } from "../todos/to-do-array";
+import { arrayOfTodoArrays } from "../todos/array-of-todos-arrays.js";
 import { removeToDo } from "../todos/remove-to-do";
 
 export function openModal () {
@@ -28,7 +28,7 @@ export function submitForm () {
   button.addEventListener('click', (e) => {
     e.preventDefault();
     getDataFromForm();
-    removeToDo(todoArray);
+    removeToDo(arrayOfTodoArrays[0].array);
     //add a function to make a todo from the form
     dialog.close();
   });

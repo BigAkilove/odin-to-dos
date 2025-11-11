@@ -12,7 +12,7 @@ export function displayProject (project) {
   projectName.appendChild(textNode);
   projectName.classList.add('project-name');
 
-  console.log(projectDiv)
+  console.log(projectName)
   projectDiv.appendChild(projectName);
   content.appendChild(projectDiv);
 }

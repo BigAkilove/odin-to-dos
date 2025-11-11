@@ -1,5 +1,5 @@
 import { Todo } from "../todos/to-dos.js";
-import { todoArray } from "../todos/to-do-array.js";
+import { arrayOfTodoArrays } from "../todos/array-of-todos-arrays.js";
 import { projectArray } from "../projects/project-array.js";
 import { displayTodo } from "../todos/create-todo-dom.js";
 
@@ -26,6 +26,6 @@ export function getDataFromForm () {
     
     }
   });
-  const newTodo = new Todo (array[0].value, array[1].value, array[2].value, array[3].value, array[4].value, array[5].value, todoArray);
-  displayTodo(todoArray, projectArray[0]);
+  const newTodo = new Todo (array[0].value, array[1].value, array[2].value, array[3].value, array[4].value, array[5].value, arrayOfTodoArrays[0].array);
+  displayTodo(arrayOfTodoArrays[0].array, projectArray[0]);
 }

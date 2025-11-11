@@ -22,5 +22,3 @@ export class Todo {
     this.pushInArray(); 
   }
 }
-
-//can import several arrays, each of them being a project, and choose which to import where

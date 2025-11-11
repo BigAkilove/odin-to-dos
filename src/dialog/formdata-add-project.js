@@ -4,6 +4,7 @@ import { displayProject } from "../projects/create-project-dom";
 
 export function getFormProjectData() {
   const data = document.querySelectorAll('#project-dialog form');
+  
   data.forEach((element) => {
     const projectName = element.children[1].value;
     //Get the name of the project written in the form
