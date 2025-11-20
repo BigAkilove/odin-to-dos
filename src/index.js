@@ -1,12 +1,13 @@
 import "./styles.css";
-import { projectArray } from "./projects/project-array.js";
-import { displayProject } from "./projects/create-project-dom.js";
-import { displayTodo } from "./todos/create-todo-dom.js"
-import { removeToDo } from "./todos/remove-to-do.js";
+import { arrayOfTodoArrays } from "./todos/array-of-todos-arrays.js"; //no dependencies
+import { projectArray } from "./projects/project-array.js"; //project, creates the first project and adds it in the array
+import { ToDoArray } from "./todos/to-do-array.js"; //todos, array of arrays, creates the first two todos and the first todoarray
+import { displayProject } from "./projects/create-project-dom.js"; //array of array, todo array
+import { displayTodo } from "./todos/create-todo-dom.js" //single todo
+import { removeToDo } from "./todos/remove-to-do.js"; //display todo, project array
 import { todoDialog } from "./dialog/button-add-todo.js";
 import { projectDialog } from "./dialog/button-add-project.js";
-import { ToDoArray } from "./todos/to-do-array.js";
-import { arrayOfTodoArrays } from "./todos/array-of-todos-arrays.js";
+
 
 console.log(arrayOfTodoArrays);
 

@@ -1,5 +1,4 @@
 export function createSingleTodo (todo, domElement) {
-  console.log(domElement)
   const domContent = document.getElementById(domElement.name);
 
   const container = document.createElement('div');

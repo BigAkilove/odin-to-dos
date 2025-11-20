@@ -2,23 +2,23 @@ import { Todo } from "./to-dos.js";
 import { arrayOfTodoArrays } from "./array-of-todos-arrays.js";
 
 export class ToDoArray {
-  constructor(name) {
+  constructor(name, todoArray) {
     this.name = name,
     this.array = [],
 
     this.pushInArray = () => {
-      const array = {
+      const item = {
         name : this.name,
         array : this.array 
       }
-      console.log(array)
-      arrayOfTodoArrays.push(array);
+      console.log(item)
+      todoArray.push(item);
     }
     this.pushInArray();
   }
 }
 
-const todoArray = new ToDoArray('todoArray');
+/* const todoArray = new ToDoArray('todoArray', arrayOfTodoArrays);
 
 const finishCV = new Todo('Finish CV', 'I have to do a dedicated CV for web dev', '06 october 2025', 'high', 'I only have JavaScript to do to that for now', false, arrayOfTodoArrays[0].array);
-const completeThisExercise = new Todo('Complete this exercise', 'Create a project logic then add DOM stuff to it', '10 october 2025', 'high', 'I know how to do it', false, arrayOfTodoArrays[0].array);
+const completeThisExercise = new Todo('Complete this exercise', 'Create a project logic then add DOM stuff to it', '10 october 2025', 'high', 'I know how to do it', false, arrayOfTodoArrays[0].array); */
